@@ -2,3 +2,62 @@
     box-sizing: border-box;
     margin: 0;
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    grid-area: header;
+}
+.intro{
+    grid-area: intro;
+}
+.main{
+    grid-area: main;
+}
+.about{
+    grid-area: about;
+}
+.footer{
+    grid-area: footer;
+}
+.gridContainer{
+    display: grid;
+    grid-template-areas: 
+    'header header header header header'
+    'intro intro intro intro intro'
+    'main main main about about'
+    'main main main - -'
+    'foter footer footer footer footer';
+}
+.navbar{
+    border-bottom: 2px solid gray;
+}
+.stickybar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu__extra{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menuExtra{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.menuExtra span{
+    display: flex;
+    flex-direction: row;
+}
+#logoSearch{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0;
+}
+#googleLogo{
+    margin: 0;
+    padding: 0;
+}
